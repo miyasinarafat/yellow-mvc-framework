@@ -1,5 +1,5 @@
 # Yellow MVC Framework 
-A Simple PHP MVC Framework.
+A Simple PHP MVC Framework with Simple blog.
 
 ![showcase](https://i.imgur.com/Cd8knMA.png)
 
