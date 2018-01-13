@@ -7,7 +7,7 @@ foreach ($blogs as $blog): ?>
         <p class="blog-post-meta"><?php echo date('d/M/Y', strtotime($blog['created_at'])); ?></p>
         <?php echo strip_tags($obj->limit($blog['body'],300)); ?>
         <hr>
-        <a href="/edit/blog/<?php echo $blog['id']; ?>" class="btn btn-info">Edit Blog</a>
-        <a onclick="return confirm('Are you sure!');" href="/delete/blog/<?php echo $blog['id']; ?>" class="btn btn-danger">Delete Blog</a>
+        <a href="/blog/edit/<?php echo $blog['id']; ?>" class="btn btn-info">Edit Blog</a>
+        <a onclick="return confirm('Are you sure!');" href="/blog/delete/<?php echo $blog['id']; ?>" class="btn btn-danger">Delete Blog</a>
     </div><!-- /.blog-post -->
 <?php endforeach; ?>

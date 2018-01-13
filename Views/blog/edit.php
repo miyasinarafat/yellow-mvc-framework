@@ -1,4 +1,4 @@
-<form method="post" action="/edit/blog">
+<form method="post" action="/blog/edit">
     <input type="hidden" name="id" value="<?php echo $blog['id'];?>">
     <div class="form-group">
         <label for="title">Title</label>
