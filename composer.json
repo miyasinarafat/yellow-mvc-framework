@@ -1,6 +1,6 @@
 {
     "name": "themeyellow/yellow-mvc-framework",
-    "description": "A Simple PHP MVC Framework.",
+    "description": "A Simple PHP MVC Framework with Simple blog",
     "type": "project",
     "license": "MIT",
     "authors": [
