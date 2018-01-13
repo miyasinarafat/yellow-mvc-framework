@@ -20,7 +20,7 @@ $url = ltrim($_SERVER['REQUEST_URI'], '/');
         <div class="container">
             <nav class="nav">
                 <a class="nav-link" href="/">Blog</a>
-                <a class="nav-link" href="/blog/create">Create Blog</a>
+                <a class="nav-link" href="/create/blog">Create Blog</a>
             </nav>
         </div>
     </div>

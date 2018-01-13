@@ -8,8 +8,8 @@ $router = new Route($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
 
 // Blog Routes
 $router->get('/', 'App\Controllers\BlogController@index');
-$router->get('/blog/create', 'App\Controllers\BlogController@create');
-$router->post('/blog/create', 'App\Controllers\BlogController@store');
+$router->get('/create/blog', 'App\Controllers\BlogController@create');
+$router->post('/create/blog', 'App\Controllers\BlogController@store');
 $router->get('/blog/{slug}', 'App\Controllers\BlogController@show');
 $router->get('/blog/edit/{id}', 'App\Controllers\BlogController@edit');
 $router->post('/blog/edit', 'App\Controllers\BlogController@update');
