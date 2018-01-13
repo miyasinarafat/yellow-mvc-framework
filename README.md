@@ -39,6 +39,9 @@ Contributions are always welcome!
 * [Create your own MVC framework in PHP](https://medium.com/@noufel.gouirhate/create-your-own-mvc-framework-in-php-af7bd1f0ca19 "Create your own MVC framework in PHP")
 * [Using str_limit to restrict a string to a certain length](https://laravel-news.com/str_limit "Using str_limit to restrict a string to a certain length")
 
+## Notes
+* This project following MVC pattern. it will update day by day.
+
 ## License
 The [MIT License (MIT)](https://github.com/mohd-isa/carbon/blob/master/LICENSE). Please see License File for more information.
 
