@@ -10,10 +10,14 @@ $router = new Route($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
 $router->get('/', 'App\Controllers\BlogController@index');
 $router->get('/create/blog', 'App\Controllers\BlogController@create');
 $router->post('/create/blog', 'App\Controllers\BlogController@store');
-$router->get('/blog/{slug}', 'App\Controllers\BlogController@show');
-$router->get('/blog/edit/{id}', 'App\Controllers\BlogController@edit');
-$router->post('/blog/edit', 'App\Controllers\BlogController@update');
-$router->get('/blog/delete/{id}', 'App\Controllers\BlogController@delete');
+
+$router->group('blog', function () use ($router) {
+    $router->get('{slug}', 'App\Controllers\BlogController@show');
+    $router->get('edit/{id}', 'App\Controllers\BlogController@edit');
+    $router->post('edit', 'App\Controllers\BlogController@update');
+    $router->get('delete/{id}', 'App\Controllers\BlogController@delete');
+});
+
 
 
 echo $router->action();
