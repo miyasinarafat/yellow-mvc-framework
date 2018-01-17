@@ -1,0 +1,14 @@
+# Routes connection
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
+
+#RewriteEngine on
+#RewriteCond  %{REQUEST_FILENAME} !-f
+#RewriteCond  %{REQUEST_FILENAME} !-d
+#RewriteRule  ^(.*)$ index.php [QSA,L]
+
+#RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^ /index.php [NC,L,QSA]
